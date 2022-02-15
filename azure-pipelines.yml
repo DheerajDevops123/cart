@@ -12,6 +12,7 @@ steps:
 - task: Docker@2
   inputs:
     command: 'build'
+    repository: 'cart'
     Dockerfile: '**/Dockerfile'
   displayName: "Docker Build"
 - task: Docker@2
